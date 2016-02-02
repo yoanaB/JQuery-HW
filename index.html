@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car regisration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="validateForm.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <h1>Car registration</h1>
+</header>
+<!-- Add Car Form -->
+<div id="addCar" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add car</h4>
+            </div>
+            <div class="modal-body">
+                <div class="forms">
+
+                    <div class="form-container">
+                        <form role="form" class="add-car-form">
+                            <div class="form-group">
+                                <label for="brand">Brand:</label>
+                                <input type="text" class="form-control" id="brand" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model:</label>
+                                <input type="text" class="form-control" id="model" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="year">Year:</label>
+                                <input type="text" class="form-control to-test" id="year" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mileage">Mileage:</label>
+                                <input type="text" class="form-control to-test" id="mileage" required>
+                            </div>
+                            <button type="button" class="btn btn-default form-button" id="add-btn" data-dismiss="modal">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Edit Car Form-->
+<div id="edit-car" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit car</h4>
+            </div>
+            <div class="modal-body">
+                <div class="forms">
+
+                    <div class="form-container">
+                        <form role="form" class="edit-car-form">
+                            <div class="form-group">
+                                <label for="brand">Brand:</label>
+                                <input type="text" class="form-control" id="brand-edit" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model:</label>
+                                <input type="text" class="form-control" id="model-edit" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="year">Year:</label>
+                                <input type="text" class="form-control to-test" id="year-edit" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mileage">Mileage:</label>
+                                <input type="text" class="form-control to-test" id="mileage-edit" required>
+                            </div>
+                            <button type="button" class="btn btn-default form-button " id='edit-btn' data-dismiss="modal">Edit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addCar" id="btn-page">Add car</button>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Mileage</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="car-list">
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

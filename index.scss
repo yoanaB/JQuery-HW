@@ -1,0 +1,26 @@
+$background: #666699;
+$text-color: #fff;
+$button-color: #00b2b3;
+$button-color-hover: #00e5e6;
+
+body{
+  padding: 5px;
+  background: $background;
+  color: $text-color;
+}
+
+#btn-page{
+  background: $button-color;
+}
+#btn-page:hover{
+  background: $button-color-hover;
+  transition: background 0.4s ease;
+}
+
+table{
+  background: transparent;
+}
+
+#addCar{
+  color: rgba(0,0,0,0.5);
+}

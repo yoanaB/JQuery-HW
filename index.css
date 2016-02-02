@@ -1,0 +1,20 @@
+body {
+  padding: 5px;
+  background: #666699;
+  color: #fff; }
+
+#btn-page {
+  background: #00b2b3; }
+
+#btn-page:hover {
+  background: #00e5e6;
+  transition: background 0.4s ease; }
+
+table {
+  background: transparent; }
+
+#addCar,
+#edit-car{
+  color: rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=index.css.map */
